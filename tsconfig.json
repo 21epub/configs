@@ -5,10 +5,10 @@
     "outDir": "dist",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@dxsixpc/configs": ["src"],
-      "@dxsixpc/configs/*": ["src/*", "*"]
+      "@21epub/configs": ["src"],
+      "@21epub/configs/*": ["src/*", "*"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", ".eslintrc.js", "rollup.config.mjs"],
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", ".eslintrc.js", "commitlint.config.js"],
   "exclude": ["README.md"]
 }
