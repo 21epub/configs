@@ -7,7 +7,7 @@ export default defineConfig({
   themeConfig: {
     name,
     socialLinks: {
-      github: `https://github.com/dxsixpc/${name}`,
+      github: `https://github.com/21epub/${name}`,
     },
     logo: 'https://avatars.githubusercontent.com/u/5965951?s=200&v=4',
   },
