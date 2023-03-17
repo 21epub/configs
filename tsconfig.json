@@ -10,7 +10,6 @@
   "include": [
     ".dumi/**/*",
     ".dumirc.ts",
-    "src/**/*",
     ".eslintrc.js",
     "types",
     "prettier-config",
