@@ -28,6 +28,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    // .yml与yaml文件的推荐配置
+    'plugin:yml/standard',
     // ts推荐配置，做了一些兼容处理
     'plugin:@typescript-eslint/recommended',
     // eslint-plugin-import---对import的导入进行检查
@@ -96,6 +98,10 @@ module.exports = {
     '@typescript-eslint/consistent-type-assertions': 'off',
     // 不得滥用promise，这里关闭
     '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
     // 禁止未知属性。这里忽略emotion里的css属性报错。将css属性视为正常属性
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
     // 禁止未使用的表达式
@@ -121,6 +127,7 @@ module.exports = {
     'consistent-return': 'off',
     'class-methods-use-this': 'off',
     'default-case-last': 'error',
+    'dot-notation': 'off',
     eqeqeq: [2, 'always', { null: 'ignore' }],
     'func-names': [1, 'never', { generators: 'as-needed' }],
     'func-style': 'error',
@@ -142,6 +149,7 @@ module.exports = {
     'no-else-return': 'error',
     'no-eval': 'error',
     'no-implicit-coercion': 'error',
+    'no-implied-eval': 'error',
     'no-inner-declarations': 'off',
     'no-labels': 'error',
     'no-lonely-if': 'error',
@@ -167,21 +175,21 @@ module.exports = {
     'prefer-template': 'error',
     'promise/always-return': 'off',
     'promise/catch-or-return': 'off',
-    quotes: 'error',
+    quotes: ['error', 'single', { avoidEscape: true }],
     'react/destructuring-assignment': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/no-access-state-in-setstate': 'off',
     'react/self-closing-comp': 'warn',
     'react/sort-comp': 'off',
     'require-atomic-updates': 'error',
-    'sonarjs/cognitive-complexity': 'off',
+    'sonarjs/cognitive-complexity': 'warn',
     'sonarjs/no-nested-template-literals': 'off',
     'sonarjs/no-duplicate-string': 'off',
     'sonarjs/no-small-switch': 'off',
     'sonarjs/prefer-immediate-return': 'off',
     'symbol-description': 'error',
     'require-await': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': ['warn', { additionalHooks: 'useRecoilCallback' }],
     'unicorn/filename-case': 'off',
   },
 };

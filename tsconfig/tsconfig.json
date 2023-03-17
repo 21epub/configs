@@ -18,10 +18,9 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     // 控制 JSX 在 JavaScript 文件中的输出方式。 这只影响 .tsx 文件的 JS 文件输出；
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     // 模块导入修复。启用此项会自动启用 allowSyntheticDefaultImports
     "esModuleInterop": true,
-    // 为你工程中的每个 TypeScript 或 JavaScript 文件生成 .d.ts 文件。
-    "declaration": true,
     // 跳过声明文件的类型检查
     "skipLibCheck": true,
     // 解析json模块，允许导入带有“.json”扩展名的模块
@@ -45,6 +44,8 @@
     // 允许默认全部导出，而不是 * as newName的形式
     "allowSyntheticDefaultImports": true,
     // 开启后，所有的文件都应是模块
-    "isolatedModules": false
+    "isolatedModules": true,
+    "noEmit": true,
+    "suppressImplicitAnyIndexErrors": true
   }
 }

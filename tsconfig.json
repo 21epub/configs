@@ -1,14 +1,20 @@
 {
-  "extends": "./src/tsconfig/tsconfig",
+  "extends": "./tsconfig/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "@21epub/configs": ["src"],
-      "@21epub/configs/*": ["src/*", "*"]
+      "@@/*": [".dumi/tmp/*"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", ".eslintrc.js", "commitlint.config.js"],
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts",
+    "src/**/*",
+    ".eslintrc.js",
+    "types",
+    "prettier-config",
+    "eslint-config"
+  ],
   "exclude": ["README.md"]
 }

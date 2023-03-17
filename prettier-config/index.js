@@ -2,7 +2,7 @@
 module.exports = {
   // 额外的插件
   plugins: [
-    // import格式化时自动排序
+    // 格式化时自动对imports进行排序
     require.resolve('prettier-plugin-organize-imports'),
     // package.json格式化时自动排序
     require.resolve('prettier-plugin-packagejson'),
@@ -38,7 +38,7 @@ module.exports = {
     { files: '.eslintrc', options: { parser: 'json' } },
     { files: '.prettierrc', options: { parser: 'json' } },
     { files: 'package*.json', options: { printWidth: 1000 } },
-    { files: '*.yml', options: { singleQuote: false } },
+    { files: ['*.yml', '*.yaml'], options: { singleQuote: false } },
     { files: '*.md', options: { proseWrap: 'preserve' } },
   ],
 };

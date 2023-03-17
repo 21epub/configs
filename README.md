@@ -18,43 +18,6 @@ npm install --save-dev @21epub/configs
 
 ## 使用
 
-### commitlint
-
-`package.json`
-
-```json
-"scripts": {
-  "commit": "git add . && git-cz",
-},
-"config": {
-  "commitizen": {
-    "path": "@commitlint/cz-commitlint"
-  }
-},
-```
-
-`commitlint.config.js`
-
-```js
-module.exports = {
-  extends: ['@21epub/configs/commitlint-config'],
-};
-```
-
-上述文件设置好后，提交代码时使用下列命令
-
-```shell
-npm run commit
-```
-
-
-若要默认使用`git cz`则需全局安装相关依赖
-
-```shell
-npm i -g commitizen  inquirer@8 @commitlint/cz-commitlint
-```
-
-
 
 ### eslint
 
@@ -96,18 +59,6 @@ module.exports = {
 module.exports = {
   ...require("@21epub/configs/prettier-config"),
 };
-```
-
-
-
-### stylelint
-
-`.stylelintrc`
-
-```json
-{
-  "extends": "@21epub/configs/stylelint-config"
-}
 ```
 
 
