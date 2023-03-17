@@ -36,8 +36,8 @@ module.exports = {
 
 `tsconfig.json`
 
+tsconfig.json 文件中，也需要在include中引入.eslintrc.js文件
 ```json
-// tsconfig.json 文件中，也需要在include中引入.eslintrc.js文件
 {
   "include": [".eslintrc.js"]
 }
