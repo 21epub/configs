@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_21epub_configs=self.webpackChunk_21epub_configs||[]).push([[9],{43783:function(i,n,e){e.r(n),e.d(n,{default:function(){return r}});var a=e(63517),t=e(50959),u=function(){var s=(0,a.UO)(),d=s.id,m=(0,a.WF)(),c=m.demos,f=c[d]||{},o=f.component;return o&&(0,t.createElement)(o)},r=u}}]);
