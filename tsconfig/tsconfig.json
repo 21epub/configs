@@ -41,11 +41,9 @@
     "allowJs": true,
     // 为js文件提供类型检查，与allowJs配合使用
     "checkJs": true,
-    // 允许默认全部导出，而不是 * as newName的形式
     "allowSyntheticDefaultImports": true,
     // 开启后，所有的文件都应是模块
     "isolatedModules": true,
-    "noEmit": true,
-    "suppressImplicitAnyIndexErrors": true
+    "noEmit": true
   }
 }
